@@ -112,7 +112,7 @@ class dfu_device:
 			usb.RECIP_INTERFACE, DFU_CLRSTATUS,
 			"", index=0)
 
-	def get_state(self):
+		def get_state(self):
 		buf = self.handle.controlMsg(usb.ENDPOINT_IN |
 			usb.TYPE_CLASS | usb.RECIP_INTERFACE, DFU_GETSTATE,
 			1, index=self.index)
