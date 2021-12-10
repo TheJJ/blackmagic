@@ -25,6 +25,7 @@
 #include "target.h"
 #include "target_internal.h"
 #include "adiv5.h"
+#include "avr.h"
 #include "timing.h"
 #include "cl_utils.h"
 #include "gdb_if.h"
@@ -244,6 +245,7 @@ int platform_jtag_dp_init(ADIv5_DP_t *dp)
 
 int platform_avr_jtag_dp_init(AVR_DP_t *dp)
 {
+	(void)dp;
 	return 0;
 }
 
